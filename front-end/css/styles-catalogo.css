@@ -1,0 +1,401 @@
+.nav-pages {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: #CC988B;
+    justify-content: left;
+    align-items: center; /* Add this line to vertically center items */
+    flex-direction: row;
+}
+
+
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.seta-de-retorno {
+    cursor: pointer;
+    transition: 600ms;
+    filter: invert(0%);
+    display: flex;
+}
+
+.seta-de-retorno:hover {
+    transform: scale(1.1);
+    filter: invert(100%);
+}
+
+.opcoes-pedidos {
+    background-color: #CC988B;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 600ms;
+}
+
+.opcoes-pedidos:hover {
+    transform: scale(1.1);
+    background-color: #ffeace;
+}
+
+.nav-pages img {
+    width: 35px;
+    height: 35px;
+
+    margin: 10px 0; /* Simplify margin */
+
+
+}
+
+.search-form {
+    display: flex; /* Use flex to align items horizontally */
+    align-items: center; /* Ensure vertical alignment */
+    gap: 8px; /* Add some space between input and button */
+}
+
+
+.title-pages {
+    display:flex;
+    align-items: center;
+    color: #ffffff;
+    margin-left: 15px;
+    gap: 15px;
+}
+
+a, p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.header {
+    display: flex;
+    gap: 20px;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #EFDAC9;
+}
+
+.filtro {
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.opcoes-pedidos {
+    background-color: #CC988B;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    transition: 600ms;
+}
+
+.opcoes-pedidos:hover {
+    background-color: #A49786;
+}
+
+.conteudo {
+    flex-grow: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.titulo {
+    text-align: center;
+    color: #CC988B;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.pedidos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.pedido {
+    background-color: #EFDAC9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;}
+
+/* Estilos para os campos de entrada dentro da classe .pedido */
+.pedido .info {
+    margin-bottom: 30px; 
+
+}
+
+.pedido label {
+    display: inline-block;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.pedido img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para exibir apenas a seção ativa */
+.pedidos-secao {
+    display: none;
+}
+
+.pedidos-secao:target {
+    display: block;
+}
+
+/* Exibir a seção de estoque por padrão */
+body:not(:has(:target)) #estoque {
+    display: block;
+}
+
+form {
+    display: inline;
+}
+
+
+button {
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 600ms;
+}
+
+button:hover {
+    background-color: #A49786;
+}
+
+
+.filtro {
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.opcoes-pedidos {
+    background-color: #CC988B;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    transition: 600ms;
+}
+
+.opcoes-pedidos:hover {
+    background-color: #A49786;
+}
+
+.conteudo {
+    flex-grow: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.titulo {
+    text-align: center;
+    color: #CC988B;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+
+
+
+.pedidos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.pedido {
+    background-color: #EFDAC9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;}
+
+
+
+
+/* Estilos para os campos de entrada dentro da classe .pedido */
+.pedido .info {
+    margin-bottom: 30px; 
+
+}
+
+.pedido label {
+    display: inline-block;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.pedido img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para exibir apenas a seção ativa */
+.pedidos-secao {
+    display: none;
+}
+
+.pedidos-secao:target {
+    display: block;
+}
+
+
+/* Exibir a seção de estoque por padrão */
+body:not(:has(:target)) #estoque {
+    display: block;
+}
+
+
+
+/**
+
+GPT 2
+
+**/
+
+
+form {
+    display: inline;
+}
+
+
+input {
+    
+    padding: 10px;
+    border-width: 1px;
+    border-color: #CC988B;
+    border-style: solid;
+    border-radius: 8px;
+    display: block;
+    width: 98%;
+}
+
+.pedidos-secao input {
+    padding: 10px;
+    border-width: 1px;
+    border-color: #CC988B;
+    border-style: solid;
+    border-radius: 8px;
+    display: block;
+    margin-top: 8px;
+    width: 98%;
+}
+
+
+.alinhar-bot button {
+    padding: 10px 15px;
+    background-color: #000;
+    color: #ffffff;
+    border: none;
+    margin-right: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 600ms;
+    font-weight: bold;
+}
+
+
+button {
+    padding: 10px 15px;
+    background-color: #000;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 600ms;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #A49786;
+}
+
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .filtro {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .conteudo {
+        margin: 40px;
+        margin-top: 4px;
+    }
+
+    .opcoes-pedidos:hover {
+        transform: scale(1.03);
+        background-color: #A49786;
+    }
+
+
+    .search-form {
+        width: 100%; /* Make the form take full width */
+        flex-direction: row; /* Stack input and button vertically */
+        align-items: stretch; /* Stretch input and button to full width */
+        gap: 10px; /* Add space between input and button */
+    }
+
+    input {
+        width: 94%; /* Make input take full width */
+    }
+
+    button {
+        width: 100%; /* Make button take full width */
+    }
+    
+}

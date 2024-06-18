@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles-pedidos.css" />
+  </head>
+  <body>
+    <div class="nav-pages">
+      <div class="title-pages">
+        <div>
+          <a href="/html/home.html">
+            <img
+              class="seta-de-retorno"
+              src="/images/simbolo-da-linha-de-seta-para-a-esquerda.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div>
+          <img
+            style="filter: invert(100%)"
+            src="/images/compras-online (1).png"
+            alt=""
+          />
+        </div>
+        <h1>Pedidos</h1>
+      </div>
+    </div>
+    <div class="header-container">
+      <div class="filtro">
+        <a href="#todos" class="opcoes-pedidos">Todos</a>
+        <button class="adicionar-pedido" onclick="openModal()">
+          Adicionar Pedido
+        </button>
+      </div>
+
+      <div class="conteudo">
+        <div id="todos" class="pedidos-secao">
+          <div class="pedidos" id="pedidosWrapper">
+            <div class="pedido pendente">
+              <p>Nome: Herbert Richard</p>
+              <p>Item: Camiseta Russa</p>
+              <p>ID: 001</p>
+            </div>
+          </div>
+        </div>
+        <div id="pendentes" class="pedidos-secao">
+          <h1 class="titulo">Pedidos Pendentes</h1>
+          <div class="pedidos">
+            <div class="pedido">
+              <img src="imagem-pedido.png" />
+              <p>Nome: Cliente A</p>
+              <p>Item: Produto X</p>
+              <p>Endereço: Rua 123</p>
+              <p>ID: 001</p>
+            </div>
+          </div>
+        </div>
+        <div id="deferidos" class="pedidos-secao">
+          <h1 class="titulo">Pedidos Deferidos</h1>
+          <div class="pedidos">
+            <div class="pedido">
+              <img src="imagem-pedido.png" />
+              <p>Nome: Cliente B</p>
+              <p>Item: Produto Y</p>
+              <p>Endereço: Rua 456</p>
+              <p>ID: 002</p>
+            </div>
+          </div>
+        </div>
+        <div id="concluidos" class="pedidos-secao">
+          <h1 class="titulo">Pedidos Concluídos</h1>
+          <div class="pedidos">
+            <div class="pedido">
+              <img src="imagem-pedido.png" />
+              <p>Nome: Cliente C</p>
+              <p>Item: Produto Z</p>
+              <p>Endereço: Rua 789</p>
+              <p>ID: 003</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="pedidoModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <a class="title-modal">Adicionar Novo Pedido</a> <br><br><br>
+        <form id="productForm">
+          <div class="form-group">
+            <label for="produtoId">ID do Produto:</label>
+            <input type="number" id="produtoId" name="produtoId" required />
+          </div>
+          <div class="form-group">
+            <label for="nomeCliente">Nome do Cliente:</label>
+            <input type="text" id="nomeCliente" name="nomeCliente" required />
+          </div>
+          <div class="form-group">
+            <label for="tipoPagamento">Tipo de Pagamento:</label>
+            <select class="selecting" id="tipoPagamento" name="tipoPagamento" required>
+              <option value="Pix">Pix</option>
+              <option value="Boleto">Boleto</option>
+              <option value="Cartao">Cartão de Crédito</option>
+            </select>
+          </div><br><br>
+          <button type="submit" class="botao-sub">Registrar</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="/javascript/pedidos.js"></script>
+  </body>
+</html>

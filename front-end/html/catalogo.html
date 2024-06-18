@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles-catalogo.css" />
+  </head>
+  <body>
+    <div class="nav-pages">
+      <div class="title-pages">
+        <div>
+          <a href="/html/home.html">
+            <img
+              class="seta-de-retorno"
+              src="/images/simbolo-da-linha-de-seta-para-a-esquerda.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div>
+          <img
+            style="filter: invert(100%)"
+            src="/images/compras-online.png"
+            alt=""
+          />
+        </div>
+        <h1>Catálogo</h1>
+        <div class="alinhar-bot">
+          <form action="search-form" class="search-form" method="GET">
+            <input type="text" name="search" id="search" placeholder="Pesquisar..."/>
+            <button type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="header-container">
+      <div class="filtro">
+        <a href="catalogo.html" class="opcoes-pedidos"> Estoque </a>
+        <a href="#cadastrar" class="opcoes-pedidos"> Cadastrar </a>
+      </div>
+
+      <div class="conteudo">
+        <div id="estoque" class="pedidos-secao">
+          <div id="catalogoWrapper" class="pedidos">
+            <div class="pedido estoque">
+              <p>Nome: Cropped Holográfico</p>
+              <p>Preço: R$78,00</p>
+              <p>ID: 001</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="cadastrar" class="pedidos-secao">
+          <h1 class="titulo">Cadastrar Novo Produto</h1>
+          <div class="cadatro">
+            <div class="container">
+              <form id="productForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required />
+                  <br>  
+                <label for="cor">Cor:</label>
+                <input type="text" id="cor" name="cor" required />
+                <br>  
+                <label for="tamanho">Tamanho:</label>
+                <input type="text" id="tamanho" name="tamanho" required />
+                <br>  
+                <label for="preco">Preço:</label>
+                <input class="sel"
+                  type="number"
+                  id="preco"
+                  name="preco"
+                  step="0.01"
+                  required
+                />
+                <br>  <br>  
+                <button type="submit">Registrar</button>
+              </form>
+              <div id="message"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/javascript/catalogo.js"></script>
+  </body>
+</html>
